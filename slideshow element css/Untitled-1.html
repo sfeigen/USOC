@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>FX Slider</title>
+<link href="slideshow-stylesheet.css" rel="stylesheet" type="text/css">
+<script src="../jquery-1.10.2.min.js"></script>
+<script src="jquery.cycle.all.js"></script>
+<script type="text/javascript">
+	$('#slider').cycle({ 
+    fx:     'scrollHorz', 
+    speed:  'slow', 
+    next:   '#next', 
+    prev:   '#prev' 
+});
+</script>
+</head>
+<body>
+<div class="parent">
+  <div id="wrapper">
+    <div id="container">
+      <div class="controller" id="prev"></div>
+      <div id="slider"> <a href="#"><img src="../slideshow images/1.jpg"/></a> <a href="#"><img src="../slideshow images/2.jpg"/></a> <a href="#"><img src="../slideshow images/3.jpg"/></a> </div>
+      <div class="controller" id="next"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

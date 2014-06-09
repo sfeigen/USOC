@@ -1,0 +1,505 @@
+@charset "utf-8";
+body {
+	background-repeat: no-repeat;
+	background-image: url(../body%20images/cap-background.png)
+}
+.header {
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.toolbar {
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+/* Dropdown Menu CSS Start */
+.menu {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size: 16px;
+	font-weight: 600;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	/* Have to manually center toolbar to shift left 70-90 
+margin: auto features should still work */
+	padding-left: 70px;
+}
+.menu ul {
+	list-style-type: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	/* Spacing After Menu */
+	margin: 0px 125px 0px 0px;
+}
+.menu ul li {
+	float: left;
+}
+.menu ul li a {
+	text-decoration: none;
+	color: rgba(80,120,80,1);
+	padding: 5px;
+	margin-right: 3px;
+	background-color: rgba(255,255,255,0.75);
+	border-left: 3px solid rgba(80,120,80,.75);
+}
+.menu ul li a:hover, .menu ul li a:active, .menu ul li a:focus {
+	color: rgba(255,255,255,1);
+	background-color: rgba(80,120,80,1);
+}
+.menu ul li a.here {
+	color: rgba(255,255,255,1);
+	background-color: rgba(80,120,80,1);
+}
+.menu ul li ul .drop {
+	display: none;
+}
+.menu ul li ul .drop li {
+	float: none;
+}
+.menu ul li ul .drop li a {
+	font-size: 14px;
+}
+.menu ul li:hover ul.drop {
+	display: block;
+	padding: 5px 0 px 5 px 0px;
+	position: absolute;
+	z-index: 99;
+}
+.menu ul li:hover ul.drop a {
+	display: block;
+	width: 125px;
+}
+/* The Issues */
+/* The Issues tags: issues, issuesdropdown */
+.issues {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size: 16px;
+	font-weight: 600;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0px;
+	/* Move on the X and Y */
+	padding-top: 0px;
+	padding-left: 0px;
+	font-variant: normal;
+}
+.issues ul {
+	list-style-type: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	/* Spacing After Menu */
+	margin: 0px 150px 0px 0px;
+}
+.issues ul li {
+	float: left;
+	padding-top: 0px;
+}
+.issues ul li a {
+	text-decoration: none;
+	color: rgba(85,135,170,1);
+	padding: 5px;
+	margin-right: 3px;
+	background-color: rgba(255,255,255,0.75);
+	border-left: 3px solid rgba(85,135,170,.75);
+}
+.issues ul li a:hover, .issues ul li a:active, .issues ul li a:focus {
+	color: rgba(255,255,255,1);
+	background-color: rgba(85,135,170,1);
+}
+.issues ul li a.hereblue {
+	color: rgba(255,255,255,1);
+	background-color: rgba(85,135,170,1);
+}
+.issues ul li ul .issuesdropdown {
+	display: none;
+}
+.issues ul li ul .issuesdropdown li {
+	float: none;
+}
+.issues ul li ul .issuesdropdown li a {
+	font-size: 14px;
+}
+.issues ul li:hover ul.issuesdropdown {
+	display: block;
+	padding: 5px 0 px 5 px 0px;
+	position: absolute;
+	z-index: 99;
+}
+.issues ul li:hover ul.issuesdropdown a {
+	display: block;
+	width: 125px;
+}
+/* Social Media */
+/* Social Media tags: sm, smdropdown */
+.sm {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size: 16px;
+	font-weight: 600;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0px;
+	/* Move on the X and Y */
+	padding-top: 0px;
+	padding-left: 0px;
+	font-variant: normal;
+}
+.sm ul {
+	list-style-type: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	/* Spacing After Menu */
+	margin: 0px 0px 0px 0px;
+}
+.sm ul li {
+	float: left;
+	padding-top: 0px;
+}
+.sm ul li a {
+	text-decoration: none;
+	color: rgba(245,125,30,1);
+	padding: 5px;
+	margin-right: 3px;
+	background-color: rgba(255,255,255,0.75);
+	border-left: 3px solid rgba(245,125,30,.75);
+}
+.sm ul li a:hover, .sm ul li a:active, .sm ul li a:focus {
+	color: rgba(255,255,255,1);
+	background-color: rgba(245,125,30,1);
+}
+.sm ul li a.hereoj {
+	color: rgba(255,255,255,1);
+	background-color: rgba(245,125,30,1);
+}
+.sm ul li ul .smdropdown {
+	display: none;
+}
+.sm ul li ul .smdropdown li {
+	float: none;
+}
+.sm ul li ul .smdropdown li a {
+	font-size: 14px;
+}
+.sm ul li:hover ul.smdropdown {
+	display: block;
+	padding: 5px 0 px 5 px 0px;
+	position: absolute;
+	z-index: 99;
+}
+.sm ul li:hover ul.smdropdown a {
+	display: block;
+	width: 125px;
+}
+/* Take Action */
+/* Take Action tags: action, actiondropdown */
+.action {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size: 16px;
+	font-weight: 600;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0px;
+	/* Move on the X and Y */
+	padding-top: 0px;
+	padding-left: 0px;
+	font-variant: normal;
+}
+.action ul {
+	list-style-type: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	/* Spacing After Menu */
+	margin: 0px 150px 0px 0px;
+}
+.action ul li {
+	float: left;
+	padding-top: 0px;
+}
+.action ul li a {
+	text-decoration: none;
+	color: rgba(225,25,55,1);
+	padding: 5px;
+	margin-right: 3px;
+	background-color: rgba(255,255,255,0.75);
+	border-left: 3px solid rgba(255,25,55,.75);
+}
+.action ul li a:hover, .action ul li a:active, .action ul li a:focus {
+	color: rgba(255,255,255,1);
+	background-color: rgba(225,25,55,1);
+}
+.action ul li a.herered {
+	color: rgba(255,255,255,1);
+	background-color: rgba(225,25,55,1);
+}
+.action ul li ul .actiondropdown {
+	display: none;
+}
+.action ul li ul .actiondropdown li {
+	float: none;
+}
+.action ul li ul .actiondropdown li a {
+	font-size: 14px;
+}
+.action ul li:hover ul.actiondropdown {
+	display: block;
+	padding: 5px 0 px 5 px 0px;
+	position: absolute;
+	z-index: 99;
+}
+.action ul li:hover ul.actiondropdown a {
+	display: block;
+	width: 125px;
+}
+/* Dropdown Menu CSS End */
+
+/* About Section */
+.about {
+	margin-left: auto;
+	margin-right: auto;
+	width: 650px;
+	color: rgba(75,80,95, 1);
+	line-height: 10px;
+}
+h1 {
+	margin-top: 15px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 650px;
+	color: rgba(80,120,80,1);
+}
+h2 {
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 650px;
+	color: rgba(80,120,80,1);
+	line-height: 10px;
+}
+p {
+	text-decoration: none;
+	color: rgba(80,120,80,1);
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 25px;
+	width: 650px;
+	font-size: 18px;
+	text-align: left;
+}
+a {
+	text-decoration: none;
+	color: rgba(80,120,80,1);
+	font-weight: 600;
+}
+p a {
+	font-weight: bold;
+}
+/* In the News, New Report, Donate */
+.strip {
+	margin-left: auto;
+	margin-right: auto;
+	width: 650px;
+	height: 210px;
+	padding-bottom: 25px;
+}
+.footer {
+	background: rgba(80,120,80,.5);
+	height: 130px;
+	width: auto;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	position: relative;
+}
+.footer img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.board ul {
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 650px;
+	color: rgba(80,120,80,1);
+	line-height: 25px;
+	font-weight: bold;
+}
+.board a {
+	color: black;
+}
+.colompart1 {
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.colompart1 label {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	padding: 5px 10px;
+	position: relative;
+	z-index: 20;
+	display: block;
+	height: 30px;
+	cursor: pointer;
+	color: rgba(70,80,95,1);
+	line-height: 33px;
+	font-size: 25px;
+	background: rgba(255, 255, 255.2);
+	font-weight: 600;
+	border-left: 3px solid rgba(70,80,95,.75);
+}
+.colompart1 label:hover {
+	background: rgba(70,80,95,1);
+	color: white;
+}
+.colompart1 input:checked + label, .aboutaccordion input:checked + label:hover {
+	background: rgba(70,80,95,1);
+	color: white;
+}
+.colompart1 input {
+	display: none;
+}
+.colompart1 article {
+	background: rgba(255, 255, 255, 0.5);
+	margin-top: -1px;
+	overflow: hidden;
+	height: 0px;
+	position: relative;
+	z-index: 10;
+	transition: height 0.3s ease-in-out,
+}
+.colompart1 input:checked ~ article {
+	transition: height 0.5s ease-in-out,
+}
+.hide input:checked ~article {
+	transition: height 0.5s ease-in-out,
+}
+.colompart1 article ul li {
+	font-style: italic;
+	color: rgba(70,80,95,1);
+	line-height: 23px;
+	font-size: 16px;
+	padding: 5px 10px 5px 10px;
+	list-style-type: none;
+}
+.colompart1 input:checked ~ article.mission {
+	height: 640px;
+}
+.usapart1 {
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.usapart1 label {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	padding: 5px 10px;
+	position: relative;
+	z-index: 20;
+	display: block;
+	height: 30px;
+	cursor: pointer;
+	color: rgba(85,135,170,1);
+	line-height: 33px;
+	font-size: 25px;
+	background: rgba(255, 255, 255.2);
+	font-weight: 600;
+	border-left: 3px solid rgba(85,135,170,.75);
+}
+.usapart1 label:hover {
+	background: rgba(85,135,170,1);
+	color: white;
+}
+.usapart1 input:checked + label, .aboutaccordion input:checked + label:hover {
+	background: rgba(85,135,170,1);
+	color: white;
+}
+.usapart1 input {
+	display: none;
+}
+.usapart1 article {
+	background: rgba(255, 255, 255, 0.5);
+	margin-top: -1px;
+	overflow: hidden;
+	height: 0px;
+	position: relative;
+	z-index: 10;
+	transition: height 0.3s ease-in-out,
+}
+.usapart1 input:checked ~ article {
+	transition: height 0.5s ease-in-out,
+}
+.usapart1 article ul li {
+	font-style: italic;
+	color: rgba(85,135,170,1);
+	line-height: 23px;
+	font-size: 16px;
+	padding: 5px 10px 5px 10px;
+	list-style-type: none;
+}
+.usapart1 input:checked ~ article.usaheight {
+	height: 800px;
+}
+.europart1 {
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.europart1 label {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	padding: 5px 10px;
+	position: relative;
+	z-index: 20;
+	display: block;
+	height: 30px;
+	cursor: pointer;
+	color: rgba(245,125,30,1);
+	line-height: 33px;
+	font-size: 25px;
+	background: rgba(255, 255, 255.2);
+	font-weight: 600;
+	border-left: 3px solid rgba(245,125,30,1);
+}
+.europart1 label:hover {
+	background: rgba(245,125,30,1);
+	color: white;
+}
+.europart1 input:checked + label, .aboutaccordion input:checked + label:hover {
+	background: rgba(245,125,30,1);
+	color: white;
+}
+.europart1 input {
+	display: none;
+}
+.europart1 article {
+	background: rgba(255, 255, 255, 0.5);
+	margin-top: -1px;
+	overflow: hidden;
+	height: 0px;
+	position: relative;
+	z-index: 10;
+	transition: height 0.3s ease-in-out,
+}
+.europart1 input:checked ~ article {
+	transition: height 0.5s ease-in-out,
+}
+.europart1 article ul li {
+	font-style: italic;
+	color: rgba(245,125,30,1);
+	line-height: 23px;
+	font-size: 16px;
+	padding: 5px 10px 5px 10px;
+	list-style-type: none;
+}
+.europart1 input:checked ~ article.euroheight {
+	height: 800px;
+}

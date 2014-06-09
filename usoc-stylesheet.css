@@ -1,0 +1,598 @@
+@charset "utf-8";
+body {
+	background-repeat: no-repeat;
+	background-image: url(body%20images/cap-background.png);
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-user-select: none;
+}
+.header {
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.toolbar {
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	padding-left: 16px;
+}
+/* Dropdown Menu CSS Start */
+.menu {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size: 16px;
+	font-weight: 600;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	/* Have to manually center toolbar to shift left 70-90 
+margin: auto features should still work */
+	padding-left: 70px;
+}
+.menu ul {
+	list-style-type: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	/* Spacing After Menu */
+	margin: 0px 125px 0px 0px;
+}
+.menu ul li {
+	float: left;
+}
+.menu ul li a {
+	text-decoration: none;
+	color: rgba(80,120,80,1);
+	padding: 5px;
+	margin-right: 3px;
+	background-color: rgba(255,255,255,0.85);
+	border-left: 3px solid rgba(80,120,80,.75);
+}
+.menu ul li a:hover, .menu ul li a:active, .menu ul li a:focus {
+	color: rgba(255,255,255,1);
+	background-color: rgba(80,120,80,1);
+}
+.menu ul li a.here {
+	color: rgba(255,255,255,1);
+	background-color: rgba(80,120,80,1);
+}
+.menu ul li ul .drop {
+	display: none;
+}
+.menu ul li ul .drop li {
+	float: none;
+}
+.menu ul li ul .drop li a {
+	font-size: 14px;
+}
+.menu ul li:hover ul.drop {
+	display: block;
+	padding: 5px 0 px 5 px 0px;
+	position: absolute;
+	z-index: 99;
+}
+.menu ul li:hover ul.drop a {
+	display: block;
+	width: 125px;
+}
+/* The Issues */
+/* The Issues tags: issues, issuesdropdown */
+.issues {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size: 16px;
+	font-weight: 600;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0px;
+	/* Move on the X and Y */
+	padding-top: 0px;
+	padding-left: 0px;
+	font-variant: normal;
+}
+.issues ul {
+	list-style-type: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	/* Spacing After Menu */
+	margin: 0px 150px 0px 0px;
+}
+.issues ul li {
+	float: left;
+	padding-top: 0px;
+}
+.issues ul li a {
+	text-decoration: none;
+	color: rgba(85,135,170,1);
+	padding: 5px;
+	margin-right: 3px;
+	background-color: rgba(255,255,255,0.85);
+	border-left: 3px solid rgba(85,135,170,.75);
+}
+.issues ul li a:hover, .issues ul li a:active, .issues ul li a:focus {
+	color: rgba(255,255,255,1);
+	background-color: rgba(85,135,170,1);
+}
+.issues ul li a.hereblue {
+	color: rgba(255,255,255,1);
+	background-color: rgba(85,135,170,1);
+}
+.issues ul li ul .issuesdropdown {
+	display: none;
+}
+.issues ul li ul .issuesdropdown li {
+	float: none;
+}
+.issues ul li ul .issuesdropdown li a {
+	font-size: 14px;
+}
+.issues ul li:hover ul.issuesdropdown {
+	display: block;
+	padding: 5px 0 px 5 px 0px;
+	position: absolute;
+	z-index: 99;
+}
+.issues ul li:hover ul.issuesdropdown a {
+	display: block;
+	width: 125px;
+}
+/* Social Media */
+/* Social Media tags: sm, smdropdown */
+.sm {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size: 16px;
+	font-weight: 600;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0px;
+	/* Move on the X and Y */
+	padding-top: 0px;
+	padding-left: 0px;
+	font-variant: normal;
+}
+.sm ul {
+	list-style-type: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	/* Spacing After Menu */
+	margin: 0px 0px 0px 0px;
+}
+.sm ul li {
+	float: left;
+	padding-top: 0px;
+}
+.sm ul li a {
+	text-decoration: none;
+	color: rgba(245,125,30,1);
+	padding: 5px;
+	margin-right: 3px;
+	background-color: rgba(255,255,255,0.85);
+	border-left: 3px solid rgba(245,125,30,.75);
+}
+.sm ul li a:hover, .sm ul li a:active, .sm ul li a:focus {
+	color: rgba(255,255,255,1);
+	background-color: rgba(245,125,30,1);
+}
+.sm ul li a.hereoj {
+	color: rgba(255,255,255,1);
+	background-color: rgba(245,125,30,1);
+}
+.sm ul li ul .smdropdown {
+	display: none;
+}
+.sm ul li ul .smdropdown li {
+	float: none;
+}
+.sm ul li ul .smdropdown li a {
+	font-size: 14px;
+}
+.sm ul li:hover ul.smdropdown {
+	display: block;
+	padding: 5px 0 px 5 px 0px;
+	position: absolute;
+	z-index: 99;
+}
+.sm ul li:hover ul.smdropdown a {
+	display: block;
+	width: 125px;
+}
+/* Take Action */
+/* Take Action tags: action, actiondropdown */
+.action {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size: 16px;
+	font-weight: 600;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0px;
+	/* Move on the X and Y */
+	padding-top: 0px;
+	padding-left: 0px;
+	font-variant: normal;
+}
+.action ul {
+	list-style-type: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	/* Spacing After Menu */
+	margin: 0px 150px 0px 0px;
+}
+.action ul li {
+	float: left;
+	padding-top: 0px;
+}
+.action ul li a {
+	text-decoration: none;
+	color: rgba(225,25,55,1);
+	padding: 5px;
+	margin-right: 3px;
+	background-color: rgba(255,255,255,0.85);
+	border-left: 3px solid rgba(255,25,55,.75);
+}
+.action ul li a:hover, .action ul li a:active, .action ul li a:focus {
+	color: rgba(255,255,255,1);
+	background-color: rgba(225,25,55,1);
+}
+.action ul li a.herered {
+	color: rgba(255,255,255,1);
+	background-color: rgba(225,25,55,1);
+}
+.action ul li ul .actiondropdown {
+	display: none;
+}
+.action ul li ul .actiondropdown li {
+	float: none;
+}
+.action ul li ul .actiondropdown li a {
+	font-size: 14px;
+}
+.action ul li:hover ul.actiondropdown {
+	display: block;
+	padding: 5px 0 px 5 px 0px;
+	position: absolute;
+	z-index: 99;
+}
+.action ul li:hover ul.actiondropdown a {
+	display: block;
+	width: 120px;
+}
+/* Dropdown Menu CSS End */
+/* Lightbox Slide CSS Begin - 
+To Do: Find a way to add links to the images on the slideshow and put in <div>; also,
+find out if <style># element {}</style> is an appropriate substitution for CSS in the sourcecode.*/
+
+.parent {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	height: 400px;
+	width: 650px;
+	box-shadow: 0 0 20px 0px rgba(80,120,80,1);
+	-moz-box-shadow: 0 0 15px 3px #999;
+	-webkit-box-shadow: 0 0 15px 3px #999;
+}
+#wrapper {
+	display: block;
+	height: 400px;
+	width: 650px;
+	margin: auto;
+}
+#container {
+	display: block;
+	height: 400px;
+	width: 650px;
+	overflow: hidden;
+}
+/* Scrapping for now in favor of just changing the background text
+#overlay {
+	height: 150px;
+	width: 650px;
+	background-color: rgba(0,0,0,.5);
+	display: block;
+	z-index: 98;
+	position: absolute;
+	float: left;
+}
+*/
+#prev {
+	float: left;
+	position: relative;
+	z-index: 99;
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	height: 150px;
+	width: 50px;
+	background-color: rgba(0,0,0,0.8);
+}
+#next {
+	float: right;
+	position: relative;
+	background-color: rgba(0,0,0,.8);
+	z-index: 98;
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	height: 150px;
+	width: 50px;
+}
+#slider {
+	display: block;
+	float: left;
+	height: 400px;
+	width: 650px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 98;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: 400;
+}
+/* About Section */
+.about {
+	margin-left: auto;
+	margin-right: auto;
+	width: 650px;
+	color: rgba(75,80,95, 1);
+	line-height: 10px;
+}
+h1 {
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 650px;
+	color: rgba(75,80,95,1);
+	line-height: 10px;
+}
+h2 {
+	min-width: 650px;
+	min-height: 50px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 60px;
+	padding-right: 60px;
+	position: absolute;
+	color: rgba(255,255,255,1);
+	background: rgba(0,0,0,.700);
+	font-size: 35px;
+	text-align: left;
+	font-weight: 100;
+	font-variant: small-caps;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+}
+h3 {
+	max-width: 590px;
+	min-height: 100px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 0px;
+	padding-left: 60px;
+	padding-right: 60px;
+	position: absolute;
+	color: rgba(255,255,255,0.8);
+	background: rgba(0,0,0,.700);
+	font-size: 20px;
+	text-align: left;
+	font-weight: 100;
+	font-variant: none;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+}
+p {
+	text-decoration: none;
+	color: rgba(75,80,95,1);
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 25px;
+	width: 650px;
+	font-size: 18px;
+	text-align: left;
+}
+a {
+	text-decoration: none;
+	color: rgba(75,80,95,1.00);
+	font-weight: 600;
+}
+/* In the News, New Report, Donate */
+.strip {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	width: 650px;
+	height: 210px;
+	padding-bottom: 25px;
+}
+/* ABOUT SECTION */
+.aboutaccordion {
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.aboutaccordion label {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	padding: 5px 10px;
+	position: relative;
+	z-index: 20;
+	display: block;
+	height: 30px;
+	cursor: pointer;
+	color: rgba(80,120,80,1);
+	line-height: 33px;
+	font-size: 25px;
+	background: rgba(255,255,255,.2);
+	font-weight: 600;
+	border-left: 3px solid rgba(80,120,80,.75);
+}
+.aboutaccordion label:hover {
+	background: rgba(80,120,80,1);
+	color: white;
+}
+.aboutaccordion input:checked + label, .aboutaccordion input:checked + label:hover {
+	background: rgba(80,120,80,1);
+	color: white;
+}
+.aboutaccordion input {
+	display: none;
+}
+.aboutaccordion article {
+	background: rgba(255, 255, 255, 0.5);
+	margin-top: -1px;
+	overflow: hidden;
+	height: 0px;
+	position: relative;
+	z-index: 10;
+	transition: height 0.3s ease-in-out;
+}
+.aboutaccordion input:checked ~ article {
+	transition: height 0.5s ease-in-out;
+}
+.aboutaccordion article p {
+	font-style: italic;
+	color: rgba(80,120,80,1);
+	line-height: 23px;
+	font-size: 16px;
+	padding: 5px 10px 5px 10px;
+}
+.aboutaccordion input:checked ~ article.mission {
+	height: 175px;
+}
+/* ABOUT 2 */
+.aboutaccordion2 {
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.aboutaccordion2 label {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	padding: 5px 10px;
+	position: relative;
+	z-index: 20;
+	display: block;
+	height: 30px;
+	cursor: pointer;
+	color: rgba(75,80,95,.9);
+	line-height: 33px;
+	font-size: 25px;
+	background: rgba(255,255,255,.2);
+	font-weight: 600;
+	border-left: 3px solid rgba(75,80,95,.75);
+}
+.aboutaccordion2 label:hover {
+	background: rgba(75,80,95,1);
+	color: white;
+}
+.aboutaccordion2 input:checked + label, .aboutaccordion2 input:checked + label:hover {
+	background: rgba(75,80,95,1);
+	color: white;
+}
+.aboutaccordion2 input {
+	display: none;
+}
+.aboutaccordion2 article {
+	background: rgba(255, 255, 255, 0.5);
+	margin-top: -1px;
+	overflow: hidden;
+	height: 0px;
+	position: relative;
+	z-index: 10;
+	transition: height 0.3s ease-in-out;
+}
+.aboutaccordion2 input:checked ~ article {
+	transition: height 0.5s ease-in-out;
+}
+.aboutaccordion2 article p {
+	font-style: italic;
+	color: rgba(75,80,95,1);
+	line-height: 23px;
+	font-size: 16px;
+	padding: 5px 10px 5px 10px;
+}
+.aboutaccordion2 input:checked ~ article.vision {
+	height: 100px;
+}
+/*ABOUT3*/
+.aboutaccordion3 {
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.aboutaccordion3 label {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	padding: 5px 10px;
+	position: relative;
+	z-index: 20;
+	display: block;
+	height: 30px;
+	cursor: pointer;
+	color: rgba(85,135,170,1);
+	line-height: 33px;
+	font-size: 25px;
+	background: rgba(255,255,255,.2);
+	font-weight: 600;
+	border-left: 3px solid rgba(85,135,170,.75);
+}
+.aboutaccordion3 label:hover {
+	background: rgba(85,135,170,1);
+	color: white;
+}
+.aboutaccordion3 input:checked + label, .aboutaccordion3 input:checked + label:hover {
+	background: rgba(85,135,170,1);
+	color: white;
+}
+.aboutaccordion3 input {
+	display: none;
+}
+.aboutaccordion3 article {
+	background: rgba(255, 255, 255, 0.5);
+	margin-top: -1px;
+	overflow: hidden;
+	height: 0px;
+	position: relative;
+	z-index: 10;
+	transition: height 0.3s ease-in-out;
+}
+.aboutaccordion3 input:checked ~ article {
+	transition: height 0.5s ease-in-out;
+}
+.aboutaccordion3 article p {
+	font-style: italic;
+	color: rgba(85,135,170,1);
+	line-height: 23px;
+	font-size: 16px;
+	padding: 5px 10px 5px 10px;
+}
+.aboutaccordion3 input:checked ~ article.history {
+	height: 375px;
+}
+p indep {
+	font-style: normal;
+	font-weight: 800;
+}
+/* FOOTER */
+.footer {
+	background: rgba(80,120,80,.5);
+	height: 130px;
+	width: auto;
+	padding-top: 3px;
+	position: relative;
+}
+.footer img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}

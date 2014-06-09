@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* Fill this with the CSS elements in the <html> code */
+
+.parent {
+}
+#wrapper {
+	display: block;
+	height: 400px;
+	width: 650px;
+	margin: auto;
+}
+#container {
+	background-color: rgba(80,120,80,0.4);
+	display: block;
+	float: left;
+	height: 400px;
+	width: 650px;
+	overflow: auto;
+}
+#prev {
+	float: left;
+	height: 725px;
+	width: 125px;
+	position: relative;
+	z-index: 99;
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	background-image: url(Left.png);
+}
+#next {
+	float: right;
+	position: relative;
+	z-index: 99;
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	background-image: url(Right.png);
+	height: 725px;
+	width: 100px;
+}
+#slider {
+	display: block;
+	float: left;
+	height: 400px;
+	width: 650px;
+	overflow: hidden;
+	position: absolute;
+}

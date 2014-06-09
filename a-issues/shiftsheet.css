@@ -1,0 +1,6 @@
+@charset "utf-8";
+body {
+	background-repeat: no-repeat;
+	background-image: url(../body%20images/cap-background.png);
+	padding-left: 16px;
+}

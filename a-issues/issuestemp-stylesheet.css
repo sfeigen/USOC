@@ -1,0 +1,675 @@
+@charset "utf-8";
+body {
+	background-repeat: no-repeat;
+	background-image: url(../body%20images/cap-background.png);
+}
+.header {
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.toolbar {
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+/* Dropdown Menu CSS Start */
+.menu {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size: 16px;
+	font-weight: 600;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	/* Have to manually center toolbar to shift left 70-90 
+margin: auto features should still work */
+	padding-left: 70px;
+}
+.menu ul {
+	list-style-type: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	/* Spacing After Menu */
+	margin: 0px 125px 0px 0px;
+}
+.menu ul li {
+	float: left;
+}
+.menu ul li a {
+	text-decoration: none;
+	color: rgba(80,120,80,1);
+	padding: 5px;
+	margin-right: 3px;
+	background-color: rgba(255,255,255,0.75);
+	border-left: 3px solid rgba(80,120,80,.75);
+}
+.menu ul li a:hover, .menu ul li a:active, .menu ul li a:focus {
+	color: rgba(255,255,255,1);
+	background-color: rgba(80,120,80,1);
+}
+.menu ul li a.here {
+	color: rgba(255,255,255,1);
+	background-color: rgba(80,120,80,1);
+}
+.menu ul li ul .drop {
+	display: none;
+}
+.menu ul li ul .drop li {
+	float: none;
+}
+.menu ul li ul .drop li a {
+	font-size: 14px;
+}
+.menu ul li:hover ul.drop {
+	display: block;
+	padding: 5px 0 px 5 px 0px;
+	position: absolute;
+	z-index: 99;
+}
+.menu ul li:hover ul.drop a {
+	display: block;
+	width: 125px;
+}
+/* The Issues */
+/* The Issues tags: issues, issuesdropdown */
+.issues {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size: 16px;
+	font-weight: 600;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0px;
+	/* Move on the X and Y */
+	padding-top: 0px;
+	padding-left: 0px;
+	font-variant: normal;
+}
+.issues ul {
+	list-style-type: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	/* Spacing After Menu */
+	margin: 0px 150px 0px 0px;
+}
+.issues ul li {
+	float: left;
+	padding-top: 0px;
+}
+.issues ul li a {
+	text-decoration: none;
+	color: rgba(85,135,170,1);
+	padding: 5px;
+	margin-right: 3px;
+	background-color: rgba(255,255,255,0.75);
+	border-left: 3px solid rgba(85,135,170,.75);
+}
+.issues ul li a:hover, .issues ul li a:active, .issues ul li a:focus {
+	color: rgba(255,255,255,1);
+	background-color: rgba(85,135,170,1);
+}
+.issues ul li a.hereblue {
+	color: rgba(255,255,255,1);
+	background-color: rgba(85,135,170,1);
+}
+.issues ul li ul .issuesdropdown {
+	display: none;
+}
+.issues ul li ul .issuesdropdown li {
+	float: none;
+}
+.issues ul li ul .issuesdropdown li a {
+	font-size: 14px;
+}
+.issues ul li:hover ul.issuesdropdown {
+	display: block;
+	padding: 5px 0 px 5 px 0px;
+	position: absolute;
+	z-index: 99;
+}
+.issues ul li:hover ul.issuesdropdown a {
+	display: block;
+	width: 125px;
+}
+/* Social Media */
+/* Social Media tags: sm, smdropdown */
+.sm {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size: 16px;
+	font-weight: 600;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0px;
+	/* Move on the X and Y */
+	padding-top: 0px;
+	padding-left: 0px;
+	font-variant: normal;
+}
+.sm ul {
+	list-style-type: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	/* Spacing After Menu */
+	margin: 0px 0px 0px 0px;
+}
+.sm ul li {
+	float: left;
+	padding-top: 0px;
+}
+.sm ul li a {
+	text-decoration: none;
+	color: rgba(245,125,30,1);
+	padding: 5px;
+	margin-right: 3px;
+	background-color: rgba(255,255,255,0.75);
+	border-left: 3px solid rgba(245,125,30,.75);
+}
+.sm ul li a:hover, .sm ul li a:active, .sm ul li a:focus {
+	color: rgba(255,255,255,1);
+	background-color: rgba(245,125,30,1);
+}
+.sm ul li a.hereoj {
+	color: rgba(255,255,255,1);
+	background-color: rgba(245,125,30,1);
+}
+.sm ul li ul .smdropdown {
+	display: none;
+}
+.sm ul li ul .smdropdown li {
+	float: none;
+}
+.sm ul li ul .smdropdown li a {
+	font-size: 14px;
+}
+.sm ul li:hover ul.smdropdown {
+	display: block;
+	padding: 5px 0 px 5 px 0px;
+	position: absolute;
+	z-index: 99;
+}
+.sm ul li:hover ul.smdropdown a {
+	display: block;
+	width: 125px;
+}
+/* Take Action */
+/* Take Action tags: action, actiondropdown */
+.action {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size: 16px;
+	font-weight: 600;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0px;
+	/* Move on the X and Y */
+	padding-top: 0px;
+	padding-left: 0px;
+	font-variant: normal;
+}
+.action ul {
+	list-style-type: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	/* Spacing After Menu */
+	margin: 0px 150px 0px 0px;
+}
+.action ul li {
+	float: left;
+	padding-top: 0px;
+}
+.action ul li a {
+	text-decoration: none;
+	color: rgba(225,25,55,1);
+	padding: 5px;
+	margin-right: 3px;
+	background-color: rgba(255,255,255,0.75);
+	border-left: 3px solid rgba(255,25,55,.75);
+}
+.action ul li a:hover, .action ul li a:active, .action ul li a:focus {
+	color: rgba(255,255,255,1);
+	background-color: rgba(225,25,55,1);
+}
+.action ul li a.herered {
+	color: rgba(255,255,255,1);
+	background-color: rgba(225,25,55,1);
+}
+.action ul li ul .actiondropdown {
+	display: none;
+}
+.action ul li ul .actiondropdown li {
+	float: none;
+}
+.action ul li ul .actiondropdown li a {
+	font-size: 14px;
+}
+.action ul li:hover ul.actiondropdown {
+	display: block;
+	padding: 5px 0 px 5 px 0px;
+	position: absolute;
+	z-index: 99;
+}
+.action ul li:hover ul.actiondropdown a {
+	display: block;
+	width: 125px;
+}
+/* Dropdown Menu CSS End */
+
+/* About Section */
+.about {
+	margin-left: auto;
+	margin-right: auto;
+	width: 650px;
+	color: rgba(75,80,95, 1);
+	line-height: 10px;
+}
+h1 {
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 650px;
+	color: rgba(85,135,170,1);
+	line-height: 10px;
+}
+p {
+	text-decoration: none;
+	color: rgba(85,135,170,1);
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 25px;
+	width: 650px;
+	font-size: 18px;
+	text-align: left;
+}
+a {
+	text-decoration: none;
+	color: rgba(85,135,170,1);
+	font-weight: 600;
+}
+/* Issues Panel 
+.spantable A:link, .spantable A:visited, .spantable A:active {
+	text-decoration: none;
+	color: rgba(255,255,255,1);
+	background-color: rgba(85,135,170,.85);
+	font-weight: 600;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,.2);
+	color: rgba(85,135,170,1);
+}
+.spantable A:hover {
+	text-decoration: none;
+	background-color: rgba(255,255,255,.2);
+	color: rgba(85,135,170,1);
+	font-weight: 600;
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: rgba(255,255,255,1);
+	background-color: rgba(85,135,170,.85);
+}
+.table {
+	padding-top: 20px;
+	padding-bottom: 15px;
+	text-align: center;
+	height: 180px;
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.issuecontainer1, .issuecontainer2, .issuecontainer3 {
+	width: 650px;
+	height: 35px;
+	text-align: center;
+	margin-bottom: 10px;
+	margin-right: 0px;
+}
+.demobilization, .peace, .civilsociety, .fumigation, .freetrade, .laborrights, .indigenousgroups, .womenchildren, .humanrights {
+	color: rgba(255,255,255,1);
+	text-size: 20px;
+	font-size: large;
+	font-weight: 600;
+	height: 35px;
+	width: 150px;
+	vertical-align: middle;
+	border: 3px solid rgba(85,135,170,.85);
+	display: inline-block;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 3px;
+	text-align: center;
+}
+.indigenousgroups, .womenchildren, .humanrights {
+	color: rgba(255,255,255,1);
+	text-size: 20px;
+	font-size: large;
+	font-weight: 600;
+	height: 50px;
+	width: 150px;
+	vertical-align: middle;
+	border: 3px solid rgba(85,135,170,.85);
+	display: inline-block;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 3px;
+	text-align: center;
+}
+/* In the News, New Report, Donate */
+.footer {
+	background: rgba(85,135,170,.5);
+	height: 130px;
+	width: auto;
+	position: relative;
+}
+.footer img {
+	padding-top: 5px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.board {
+	margin-left: auto;
+	margin-right: auto;
+	width: 650px;
+	color: rgba(85,135,170,1);
+	line-height: 25px;
+	font-weight: bold;
+}
+.board a {
+	color: black;
+}
+.demo, .peace, .civil, .fumigation, .freetrade, .labor, .indig, .women, .humanrights, .afro {
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.demo label, .peace label, .civil label, .fumigation label, .freetrade label, .labor label, .indig label, .women label, .humanrights label, .afro label {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	padding: 5px 10px;
+	position: relative;
+	z-index: 20;
+	display: block;
+	height: 30px;
+	cursor: pointer;
+	line-height: 33px;
+	font-size: 25px;
+	background: rgba(255, 255, 255,.2);
+	font-weight: 600;
+}
+.demo label {
+	color: rgba(170,200,230,1);
+	border-left: 3px solid rgba(170,200,230,.75);
+}
+.peace label {
+	color: rgba(145,150,200,1);
+	border-left: 3px solid rgba(145,150,200,.75);
+}
+.civil label {
+	color: rgba(160,205,180,1);
+	border-left: 3px solid rgba(160,205,180,.75);
+}
+.fumigation label {
+	color: rgba(170,180,175,1);
+	border-left: 3px solid rgba(170,180,175,.75);
+}
+.freetrade label {
+	color: rgba(205,180,140,1);
+	border-left: 3px solid rgba(205,180,140,.75);
+}
+.labor label {
+	color: rgba(205,230,145,1);
+	border-left: 3px solid rgba(205,230,145,.75);
+}
+.indig label {
+	color: rgba(230,102,101,1);
+	border-left: 3px solid rgba(230,102,101,.75);
+}
+.women label {
+	color: rgba(175,110,175,1);
+	border-left: 3px solid rgba(175,110,175,.75);
+}
+.humanrights label {
+	color: rgba(7,107,180,1);
+	border-left: 3px solid rgba(7,107,180,.75);
+}
+.afro label {
+	color: rgba(245,125,70,1);
+	border-left: 3px solid rgba(245,125,70,.75);
+}
+.demo label:hover {
+	background: rgba(170,200,230,1);
+	color: white;
+}
+.peace label:hover {
+	background: rgba(145,150,200,1);
+	color: white;
+}
+.civil label:hover {
+	background: rgba(160,205,180,1);
+	color: white;
+}
+.fumigation label:hover {
+	background: rgba(170,180,175,1);
+	color: white;
+}
+.freetrade label:hover {
+	background: rgba(205,180,140,1);
+	color: white;
+}
+.labor label:hover {
+	background: rgba(205,230,145,1);
+	color: white;
+}
+.indig label:hover {
+	background: rgba(230,102,101,1);
+	color: white;
+}
+.women label:hover {
+	background: rgba(175,110,175,1);
+	color: white;
+}
+.humanrights label:hover {
+	background: rgba(7,107,180,1);
+	color: white;
+}
+.afro label:hover {
+	background: rgba(245,125,70,1);
+	color: white;
+}
+.demo input:checked + label {
+	background: rgba(170,200,230,1);
+	color: white;
+}
+.peace input:checked + label {
+	background: rgba(145,150,200,1);
+	color: white;
+}
+.civil input:checked + label {
+	background: rgba(160,205,180,1);
+	color: white;
+}
+.fumigation input:checked + label {
+	background: rgba(170,180,175,1);
+	color: white;
+}
+.freetrade input:checked + label {
+	background: rgba(205,180,140,1);
+	color: white;
+}
+.labor input:checked + label {
+	background: rgba(205,230,145,1);
+	color: white;
+}
+.indig input:checked + label {
+	background: rgba(230,102,101,1);
+	color: white;
+}
+.women input:checked + label {
+	background: rgba(175,110,175,1);
+	color: white;
+}
+.humanrights input:checked + label {
+	background: rgba(7,107,180,1);
+	color: white;
+}
+.afro input:checked + label {
+	background: rgba(245,125,70,1);
+	color: white;
+}
+.demo input:checked + label:hover {
+	background: rgba(170,200,230,1);
+	color: white;
+}
+.peace input:checked + label:hover {
+	background: rgba(145,150,200,1);
+	color: white;
+}
+.civil input:checked + label:hover {
+	background: rgba(160,205,180,1);
+	color: white;
+}
+.fumigation input:checked + label:hover {
+	background: rgba(170,180,175,1);
+	color: white;
+}
+.freetrade input:checked + label:hover {
+	background: rgba(205,180,140,1);
+	color: white;
+}
+.labor input:checked + label:hover {
+	background: rgba(205,230,145,1);
+	color: white;
+}
+.indig input:checked + label:hover {
+	background: rgba(230,102,101,1);
+	color: white;
+}
+.women input:checked + label:hover {
+	background: rgba(175,110,175,1);
+	color: white;
+}
+.humanrights input:checked + label:hover {
+	background: rgba(210,60,50,1);
+	color: white;
+}
+.afro input:checked + label:hover {
+	background: rgba(245,125,70,1);
+	color: white;
+}
+.demo input, .peace input, .civil input, .fumigation input, .freetrade input, .labor input, .indig input, .afro input, .women input, .humanrights input {
+	display: none;
+}
+.demo article, .peace article, .civil article, .fumigation article, .freetrade article, .labor article, .indig article, .afro article, .women article, .humanrights article {
+	background: rgba(255, 255, 255, 0.5);
+	margin-top: -1px;
+	overflow: hidden;
+	height: 0px;
+	position: relative;
+	z-index: 10;
+	transition: height 0.3s ease-in-out,
+}
+.demo input:checked ~ article, .peace input:checked ~ article, .civil input:checked ~ article, .fumigation input:checked ~ article, .freetrade input:checked ~ article, .labor input:checked ~ article, .indig input:checked ~ article, .afro input:checked ~ article, .women input:checked ~ article, .humanrights input:checked ~ article {
+	transition: height 0.5s ease-in-out,
+}
+.demo article ul li, .peace article ul li, .civil article ul li, .fumigation article ul li, .freetrade article ul li, .labor article ul li, .indig article ul li, .afro article ul li, .women article ul li, .humanrights article ul li {
+	font-style: none;
+	font-weight: 500;
+	color: rgba(0,0,0,.75);
+	line-height: 20px;
+	font-size: 16px;
+	padding: 5px 5px 5px 5px;
+	list-style-type: none;
+}
+.demo input:checked ~ article.demoheight, .peace input:checked ~ article.peaceheight, .civil input:checked ~ article.civilheight, .fumigation input:checked ~ article.fumigationheight, .freetrade input:checked ~ article.freetradeheight, .labor input:checked ~ article.laborheight, .indig input:checked ~ article.indigheight, .afro input:checked ~ article.afroheight, .women input:checked ~ article.womenheight, .humanrights input:checked ~ article.humanrightsheight {
+	height: 300px;
+}
+.clear {
+	clear: both;
+}
+.issuegeneral {
+	width: 650px;
+	height: 50px;
+	font-weight: bold;
+	text-align: center;
+	font-size:36px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 35px;
+	}
+
+.container p {
+	text-decoration: none;
+	color: rgba(59,95,119,1.00);
+	background: rgba(255,255,255,0.25);
+	padding-left: 15px; 
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 25px;
+	width: 620px;
+	font-size: 18px;
+	text-align: left;
+}
+.container ul li {
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+	list-style-type: none;
+	}
+.container ul li a {
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+	list-style-type: none;
+	font-size: 18px;
+	}
+.demoheader {
+	color: rgba(41,91,140,1.00);
+	background: rgba(170,200,230,.25);
+}
+.peaceheader {
+	color: rgba(145,150,200,1);
+	background: rgba(145,150,200,.25);
+}
+.civilheader {
+	color: rgba(74,141,104,1.00);
+	background: rgba(160,205,180,.25);
+}
+.fumigationheader {
+	color: rgba(99,112,105,1.00);
+	background: rgba(170,180,175,.25);
+}
+.freetradeheader {
+	color: rgba(98,120,149,1.00);
+	background: rgba(205,180,140,.25);
+}
+.laborheader {
+	color: rgba(163,209,54,1.00);
+	background: rgba(158,204,46,0.25);
+}
+.indigheader {
+	color: rgba(230,102,101,1);
+	background: rgba(230,102,101,.25);
+}
+.womenheader {
+	color: rgba(175,110,175,1);
+	background: rgba(175,110,175,.25);
+}
+.humanrightsheader {
+	color: rgba(7,107,180,1);
+	background: rgba(7,107,180,.25);
+}
+.afroheader {
+	color: rgba(245,125,70,1);
+	background: rgba(245,125,70,.25);
+}

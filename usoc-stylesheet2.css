@@ -1,0 +1,71 @@
+@charset "utf-8";
+.toolbar {
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	padding-left: 16px;
+}
+.textureBlock {
+	height: 50px;
+	width: 50px;
+	background-color: #CBCBCB
+}
+.menu {
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0px;
+	padding-top: 0px;
+}
+.menu ul {
+	list-style-type: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	/* Spacing After Menu */
+	margin: 0px 125px 0px 0px;
+	opacity: 0;
+}
+.menu ul li {
+	float: left;
+}
+.menu ul li a {
+	text-decoration: none;
+	color: rgba(80,120,80,1);
+	padding: 5px;
+	margin-right: 3px;
+	background-color: rgba(255,255,255,0.85);
+	border-left: 3px solid rgba(80,120,80,.75);
+}
+.menu ul li a:hover, .menu ul li a:active, .menu ul li a:focus {
+	color: rgba(255,255,255,1);
+	background-color: rgba(80,120,80,1);
+}
+.toolbar ul li a:hover, .toolbar ul li a:active, .toolbar ul li a:focus {
+	color: rgba(255,255,255,1);
+	background-color: rgba(80,120,80,1);
+}
+.menu ul li a.here {
+	color: rgba(255,255,255,1);
+	background-color: rgba(80,120,80,1);
+}
+.menu ul li ul .drop {
+	display: none;
+}
+.menu ul li ul .drop li {
+	float: none;
+}
+.menu ul li ul .drop li a {
+	font-size: 14px;
+}
+.menu ul li:hover ul.drop {
+	display: block;
+	padding: 5px 0 px 5 px 0px;
+	position: absolute;
+	z-index: 99;
+}
+.menu ul li:hover ul.drop a {
+	display: block;
+	width: 125px;
+}
